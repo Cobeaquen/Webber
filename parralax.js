@@ -7,9 +7,7 @@ var par03 = document.getElementById("par03");
 addEventListener("scroll", scrolling);
 
 function scrolling() {
-    document.getElementById("status").innerHTML = "scrolling!!";
     var currentScroll = document.body.scrollTop;
-    document.getElementById("status").innerHTML = currentScroll;
     par01.style.top = currentScroll*.7;
     par02.style.top = currentScroll*.8;
     par03.style.top = currentScroll*.9;
