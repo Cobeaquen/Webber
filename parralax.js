@@ -3,7 +3,6 @@ var par01 = document.getElementById("par01");
 var par02 = document.getElementById("par02");
 var par03 = document.getElementById("par03");
 
-
 addEventListener("scroll", scrolling);
 
 function scrolling() {
