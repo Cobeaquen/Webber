@@ -3,19 +3,35 @@
         <title>Home</title>
         <link rel="icon" href="Volcanic_planet_icon.png">
         <style>
+            #btn {
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                appearance: button;
+
+                text-decoration: none;
+                color: initial;
+            }
             #header1 {
-                position: relative;
-                size: 100%;
-                left: 50%;
+                top:20%;
+                left:50%;
+                width: 12%;
+                height: 5%;
+                margin-left:-100px;
+                margin-top:-100px;
+                border-style: groove;
+                border-color: salmon;
+                border-width:10px;
+                border-bottom-right-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-top-left-radius: 5px;
+                position:absolute;
                 color: green;
-                font-family: Arial;
+                font-family:sans-serif;
             }
             #jump {
                 position: relative;
                 bottom: 10px;
-            }
-            #tess {
-                visibility: hidden;
             }
         </style>
     </head>
@@ -23,8 +39,14 @@
         <p id="status">2222</p>
         <p id=randnum></p>
         <h1 id=header1>Welcome over!</h1>
+        <div>
+            <img id="par03" style="position:absolute" src="par03.png" alt="Background 3" width="100%">
+            <img id="par02" style="position:absolute" src="par02.png" alt="Background 2" width="100%">
+            <img id="par01" style="position:absolute" src="par011.png" alt="Background 1" width="100%">
+        </div>
+        <a id="btn" href="https://google.com/" class="button" style="position:absolute">Goooo!!</a>
     </body>
-    <!--<script src="parralax.js"></script>
+    <script src="parralax.js"></script>
 
-    <script src="Behaviour.js"></script>-->
+    <script src="Behaviour.js"></script>
 </html>
