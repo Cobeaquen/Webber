@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <script src="script.js"></script>
+        
+
+        <style>
+        
+        
+            #mainbutton
+            {
+                position: absolute;
+                left: 1100;
+                top: 400;
+                padding: 50px 125px;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                color: #fff;
+                background-color: #4CAF50;
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 9px #999;
+                font-size: 30px
+            }
+
+            #mainbutton:active
+            {
+                background-color: #3e8e41;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+
+            #resetbutton
+            {
+                position: absolute;
+                left: 1100;
+                top: 600;
+                padding: 25px 100px;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                color: #fff;
+                background-color: rgb(0, 0, 0);
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 9px #999;
+                font-size: 30px
+            }
+
+            #resetbutton:active
+            {
+                background-color: #000000;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+                    
+        </style>
+
+        
+    </head>
+    
+    
+    <body>
+
+    
+        
+
+
+            
+    <button id="mainbutton" onclick="roll();">Where are we dropping?</button>
+    <button id="resetbutton" onclick="resetroll();">Reset</button>         
+            
+            
+        
+
+    <canvas id="_canvas" width="1000" height="1000"></canvas>
+
+
+        
+        
+    </body>
+
+</html>
