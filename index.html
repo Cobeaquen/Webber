@@ -1,30 +1,24 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Home</title>
         <link rel="icon" href="Volcanic_planet_icon.png">
         <style>
-            #btn {
-                -webkit-appearance: button;
-                -moz-appearance: button;
-                appearance: button;
-
-                text-decoration: none;
-                color: initial;
+            #content {
+                position:absolute;
+                width: 50%;
+                height: 200%;
+                left: 25%;
             }
             #header1 {
                 top:20%;
-                left:50%;
+                width: 50%;
+                left: 25%;
                 height: 5%;
-                border-style: groove;
-                border-color: salmon;
-                border-width:10px;
-                border-bottom-right-radius: 5px;
-                border-top-right-radius: 5px;
-                border-bottom-left-radius: 5px;
-                border-top-left-radius: 5px;
-                position:absolute;
-                color: green;
+                position:relative;
+                color: white;
                 font-family:sans-serif;
+                font-size: 500%;
             }
             #jump {
                 position: relative;
@@ -33,16 +27,23 @@
         </style>
     </head>
     <body>
-        <p id=randnum></p>
-        <h1 id=header1>Welcome over!</h1>
         <div>
             <img id="par03" style="position:absolute" src="par03.png" alt="Background 3" width="100%">
             <img id="par02" style="position:absolute" src="par02.png" alt="Background 2" width="100%">
             <img id="par01" style="position:absolute" src="par011.png" alt="Background 1" width="100%">
         </div>
-        <a id="btn" href="https://google.com/" class="button" style="position:absolute">Goooo!!</a>
+        <div>
+            <img id="content" src="bar.png">
+            <div>
+                <h1 style="font-family:sans-serif;position:absolute;width:40%;left:30%;font-size:50px;top:15%;color:white">Discord Bot
+                    <p style="font-size:25px">The bot "Normie Slayer" made in python can give you a point on the fortnite map, or show your fortnite stats. pls try or im mad...</p>
+                    <a href="https://discordapp.com/oauth2/authorize?&client_id=426373801706520583&scope=bot&permissions=8">
+                    <img id="discord" src="discordimg.png">
+                    </a>
+                </h1>
+            </div>
+        </div>
+        <center id=header1>THIS IS MY DOMAIN</center>
     </body>
     <script src="parralax.js"></script>
-
-    <script src="Behaviour.js"></script>
 </html>
