@@ -6,7 +6,7 @@ addEventListener("scroll", scrolling);
 
 function scrolling() {
     var currentScroll = document.body.scrollTop;
-    par01.style.top = currentScroll*.6 + "px";
-    par02.style.top = currentScroll*.7 + "px";
-    par03.style.top = currentScroll*.8 + "px";
+    par01.style.top = currentScroll*.6;
+    par02.style.top = currentScroll*.7;
+    par03.style.top = currentScroll*.8;
 }
