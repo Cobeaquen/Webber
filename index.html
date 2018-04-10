@@ -4,6 +4,11 @@
         <title>Home</title>
         <link rel="icon" href="Volcanic_planet_icon.png">
         <style>
+            body{
+                height: 2000px;
+                background: navy url(deepsea.jpg) top center no-repeat fixed;
+                background-size: cover;
+            }
             #content {
                 position:absolute;
                 width: 50%;
@@ -24,14 +29,31 @@
                 position: relative;
                 bottom: 10px;
             }
+            #par01, #par02 {
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                position: fixed;
+                z-index: -1;
+                background: url(par011.png) 5% 50% no-repeat;
+            }
+            #par02 {
+                background: url(par02.png)
+            }
+            #par03 {
+                background: url(par03.png)
+            }
+ 
+#bubbles2{
+ background: url(bubbles3.png) 95% 90% no-repeat;
+}
         </style>
     </head>
     <body>
-        <div>
-            <img id="par03" style="position:absolute" src="par03.png" alt="Background 3" width="100%">
-            <img id="par02" style="position:absolute" src="par02.png" alt="Background 2" width="100%">
-            <img id="par01" style="position:absolute" src="par011.png" alt="Background 1" width="100%">
-        </div>
+            <div id="par03">
+            <div id="par02">
+            <div id="par01">
         <div>
             <img id="content" src="Bar.png">
             <div>
