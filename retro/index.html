@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="icon" href="Retroconsole_Transparent.png">
+        <style>    
+            body{
+                height: 4000px;
+            }
+            #hd1{
+                color: crimson;
+                font-family: monospace;
+                font-size: 500%;
+                position: relative;
+            }
+            #bg01{
+                background: url(synthwavebg.png) no-repeat;
+                position: absolute;
+                width: 100%;
+                height: 150%;
+            }
+            #bg02{
+                background: url(Retroconsole_Transparent.png) no-repeat;
+                position: absolute;
+                height: 150%;
+                width: 100%;
+            }
+            #bg03{
+                background: gray no-repeat;
+                position: absolute;
+                top: 200%;
+                height: 150%;
+                width: 100%;
+            }
+            #vid01{
+                position:absolute;
+                left: 25%;
+            }
+            #buy{
+                font-family: monospace;
+                font-size: 400%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="bg01">
+            <div id="bg02">
+            </div>
+        </div>
+        <div id="bg03">
+            <video id="vid01" width=50% height=50% controls>
+                <source src="Retroconsole_Ending Beta.mp4" type="video/mp4">
+            </video>
+            <center><p id="buy">Buy now</p></center>
+        </div>
+        <center><p id="hd1">BUY YOUR OWN RETRO CONSOLE</p></center>
+    </body>
+    <script src="behaviour.js"></script>
+</html>
