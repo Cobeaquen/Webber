@@ -8,6 +8,6 @@ addEventListener("scroll", onScroll)
 function onScroll()
 {
     var scroll = document.body.scrollTop;
-    bg01.style.top = scroll * 0.5 + px;
+    bg01.style.top = scroll * 0.3 + px;
     bg02.style.top = scroll * 0.15 + px;
 }
