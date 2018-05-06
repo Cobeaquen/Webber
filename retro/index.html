@@ -3,10 +3,16 @@
     <head>
         <title>Retro</title>
         <link rel="icon" href="Retroconsole_Transparent.png">
-        <style>    
+        <style>
+            @font-face {
+                font-family: "fixedsys excelsior";
+                src: url(FSEX300.ttf) format("truetype");
+            }
+            p {
+                font-family: "fixedsys excelsior";
+            }
             #hd1{
                 color: crimson;
-                font-family: monospace;
                 font-size: 500%;
                 position: relative;
             }
@@ -37,8 +43,10 @@
                 left: 25%;
             }
             #buy{
+                font-family: "fixedsys excelsior";
                 top:100px;
-                border: darkred;
+                border: darkcyan;
+                color: black;
                 border-style: groove;
                 border-width: 10px;
                 background-color:coral;
@@ -46,7 +54,7 @@
                 border-bottom-right-radius: 20px;
                 border-top-left-radius: 20px;
                 border-top-right-radius: 20px;
-                font-family: monospace;
+                font-family: "fixedsys excelsior";
                 font-size: 400%;
                 position: relative;
             }
@@ -79,7 +87,7 @@
         </div>
         <div id="bg03">
             <center>
-                <button type="button" onclick="window.location = 'bought'" id="buy">Buy now</button>
+                <button type="button" onclick="window.location = 'bought'" id="buy">KÖP NU</button>
             </center>
             <center>
                 <iframe id="video01" width="768" height="432" src="https://www.youtube.com/embed/0NyGo3x0r5o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -92,7 +100,7 @@
                 </video>
             </div>
         </center>
-        <center><p id="hd1"><!--Köp din egna retro konsol nu!--></p></center>
+        <center><p id="hd1">RETRO</p></center>
     </body>
     <script src="behaviour.js"></script>
 </html>
