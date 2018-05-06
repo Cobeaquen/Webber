@@ -8,7 +8,8 @@ var bg02 = document.getElementById("bg02");
 function onScroll()
 {
     var scroll = document.documentElement.scrollTop;
-    txt.innerHTML = scroll;
+    if (scroll == 0)
+        scroll = document.body.scrollTop;
     bg01.style.top = scroll * 0.3 + px;
     bg02.style.top = scroll * 0.15 + px;
 }
