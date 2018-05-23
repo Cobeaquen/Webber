@@ -14,13 +14,13 @@
             #hd1 {
                 z-index: 1;
                 color: crimson;
-                font-size: 500%;
+                font-size: 750%;
                 position: relative;
             }
             #hd2 {
                 color: darkcyan;
-                font-size: 500%;
-                top: -155px;
+                font-size: 750%;
+                top: -235px;
                 left: 5px;
                 position: relative;
             }
@@ -34,27 +34,32 @@
                 position: absolute;
                 background-position-x: center;
                 background-size: 70%;
-                top: 2.5%;
+                background-position-y: center;
                 height: 100%;
                 width: 100%;
             }
             #bg03{
-                background: gray repeat-y;
+                background: rgb(59, 59, 59) repeat-y;
                 position: absolute;
                 top: 100%;
                 left: 0%;
                 height: 200%;
                 width: 101%;
             }
-            #vid01{
-                position:absolute;
-                left: 25%;
+            #bg04 {
+                z-index: -2;
+                background: black repeat;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0px;
             }
             #buy{
                 font-family: "fixedsys excelsior";
                 top:100px;
                 border: darkcyan;
                 color: black;
+                width: 25%;
                 border-style: groove;
                 border-width: 10px;
                 background-color:coral;
@@ -78,7 +83,7 @@
                 top: 50%;
                 width: 100%;
                 height: 125%;
-                z-index: -100;
+                z-index: -1;
                 -ms-transform: translateX(-50%) translateY(-50%);
                 -moz-transform: translateX(-50%) translateY(-50%);
                 -webkit-transform: translateX(-50%) translateY(-50%);
@@ -88,8 +93,8 @@
 
         </style>
     </head>
-    <body onscroll="onScroll()">
-        <div id="bg01"; style="height:1000px;">
+    <body style="max-width: 100%; overflow-x: hidden;" onscroll="onScroll()">
+        <div id="bg01"; style="height:100%;">
             <div id="bg02">
             </div>
         </div>
@@ -98,9 +103,13 @@
                 <button type="button" onclick="window.location = 'bought'" id="buy">KÖP NU</button>
             </center>
             <center>
-                <iframe id="video01" width="768" height="432" src="https://www.youtube.com/embed/c8rvHXRxMdc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe id="video01" width="800" height="450" src="https://www.youtube.com/embed/c8rvHXRxMdc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </center>
         </div>
+        <center>
+            <div id="bg04">
+            </div>
+        </center>
         <center>
             <div id="bgdiv">
                 <video width="100%" height="100%" playsinline autoplay muted loop poster="Gameplayimg.png" id="bgvid">

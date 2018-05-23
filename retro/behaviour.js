@@ -4,6 +4,8 @@ var bg01 = document.getElementById("bg01");
 var bg02 = document.getElementById("bg02");
 
 //addEventListener("scroll", onScroll)
+var offsetY = 100/document.body.width + px;
+bg02.style.backgroundPositionY = bg02.style.backgroundPositionY / document.body.width + "px";
 
 function onScroll()
 {
