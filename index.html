@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home</title>
-        <link rel="icon" href="Volcanic_planet_icon.png">
         <style>
-            body{
-                height: 2000px;
-                background: url(par011.png) top center no-repeat fixed;
-                background-size: cover;
-            }
             #content {
                 position:absolute;
                 width: 50%;
@@ -29,19 +22,52 @@
                 position: relative;
                 bottom: 10px;
             }
-            #par02 {
+            #par01{
+                z-index: -3;
+                background: url(par.jpg) no-repeat;
+                background-position-x: center;
+                position: absolute;
+                width: 2560px;
+                height: 1440px;
+            }
+            #par02{
+                z-index: -3;
                 background: url(par02.png) no-repeat;
+                background-position-x: center;
+                position: absolute;
+                width: 2560px;
+                height: 1440px;
             }
-            #par03 {
+            #par03{
+                z-index: -4;
                 background: url(par03.png) no-repeat;
+                background-position-x: center;
+                position: absolute;
+                width: 2560px;
+                height: 1440px;
             }
-}
         </style>
     </head>
-    <body>
-        <img id="par03" src="par03.png"/>
-        <img id="par02" src="par03.png"/>
-        <img> id="par01" src="par01.png"</img>
+    <body style="max-width: 100%; overflow-x: hidden"; onscroll="onScroll()">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86152947-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-86152947-1');
+        </script>
+
+
+        <div id="par03">
+            <div id="par01">
+                <div id="par02">
+                </div>
+            </div>
+        </div>
+        
         <div>
             <img id="content" src="Bar.png">
             <div>
