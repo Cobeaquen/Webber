@@ -22,26 +22,9 @@ function init(){
 }
 window.onload = init;
 
-// consturctor för ljud filer
-function sound(src) {
-    this.sound = document.createElement("audio");
-    this.sound.src = src;
-    this.sound.setAttribute("preload", "auto");
-    this.sound.setAttribute("controls", "none");
-    this.sound.style.display = "none";
-    document.body.appendChild(this.sound);
-    this.play = function(){
-        this.sound.play();
-    }
-    this.stop = function(){
-        this.sound.pause();
-    }
-}
-
-
 
 function roll(){
-
+    
     var spots = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]; 
     var randomspot = spots[Math.floor(Math.random()*spots.length)]; // random nummer från array
   
@@ -145,14 +128,14 @@ function roll(){
 
 
 function drawarrow(x,y){
-    soundeffect.play();
+    
     ctx.drawImage(arrow, x - 125, y - 50, 100, 100); // ritar ut pilen på x och y kordinaterna som anggavs
 }
 
 function resetroll(){  
     ctx.drawImage(map, 0, 0, 1000, 1000); // ritar upp en tom karta
     rolled = false; // gör det möjligt att köra igen
-
+    
     console.log("reset " + rolled)
 }
 
